@@ -35,8 +35,8 @@
             loopTop: false,
             css3: true,
             navigation: {
-                textColor: '#000',
-                bulletsColor: '#000',
+                textColor: '#aaa',
+                bulletsColor: '#aaa',
                 position: 'right',
                 tooltips: []
             },
@@ -820,7 +820,7 @@
                 if(options.anchors.length){
                     link = options.anchors[cont];
                 }
-                
+
                 if(options.navigation.tooltips !== 'undefined')
                 {
                     var tooltip = options.navigation.tooltips[cont];
@@ -838,7 +838,7 @@
                     var tooltip = options.navigation.tooltips[cont];
                     if(typeof tooltip === 'undefined')
                     {
-                        tooltip = ''; 
+                        tooltip = '';
                     }
                     if(typeof tooltip === '')
                     {
@@ -846,7 +846,7 @@
                     }
                 }
 
-                nav.find('ul').append('<li><a href="#' + link + '"><span></span></a></li>');
+                //nav.find('ul').append('<li><a href="#' + link + '"><span></span></a></li>');
             }
 
             nav.find('span').css('border-color', options.navigation.bulletsColor);
