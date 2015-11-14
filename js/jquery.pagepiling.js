@@ -24,14 +24,14 @@
 
         // Create some defaults, extending them with any options that were provided
         var options = $.extend(true, {
-            direction: 'vertical',
+            direction: 'horizontal',
             menu: null,
             verticalCentered: true,
             sectionsColor: [],
             anchors: [],
-            scrollingSpeed: 700,
+            scrollingSpeed: 1000,
             easing: 'easeInQuart',
-            loopBottom: false,
+            loopBottom: true,
             loopTop: false,
             css3: true,
             navigation: {
@@ -846,7 +846,7 @@
                     }
                 }
 
-                //nav.find('ul').append('<li><a href="#' + link + '"><span></span></a></li>');
+               //nav.find('ul').append('<li><a href="#' + link + '"><span></span></a></li>');
             }
 
             nav.find('span').css('border-color', options.navigation.bulletsColor);
